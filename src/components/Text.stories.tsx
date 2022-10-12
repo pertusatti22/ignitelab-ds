@@ -6,7 +6,8 @@ export default {
 	component: Text,
 	args: {
 		children: 'The quick brown fox jumps over the lazy dog.',
-	}
+		size: 'md',
+	},
 } as Meta<TextProps>
 
 export const Default: StoryObj<TextProps> = {}
@@ -27,7 +28,14 @@ export const CustomComponent: StoryObj<TextProps> = {
 	args: {
 		asChild: true,
 		children: (
-			<p>Test</p>
+			<p>The quick brown fox jumps over the lazy dog.</p>
 		)
+	},
+	argTypes: {
+		children: {
+			table: {
+				disable: true,
+			}
+		}
 	}
 }
