@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react"
-import { SignIn } from "./Signin"
+import { SignIn } from "./SignIn"
 
 
 export default {
